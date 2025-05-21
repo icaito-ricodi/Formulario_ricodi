@@ -7,34 +7,57 @@
   <meta name="description" content="Formulario de contacto">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="author" content="Ricardo">
-  <link rel="stylesheet" href="style.css">
   <title>Formulario_ricodi</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   
   <form action="https://formsubmit.co/ricadios27@gmail.com " method="POST">
-    <h2>Login</h2>
+    <h1>Formulario</h1>
     <span class="line"></span>
-    <p>coloca tu email</p>
 
     <div class="input-group">
-      <label for="email">Email:</label>
+      <h2>Datos personales:✍</h2>
+      <input type="text" name="nombre" maxlength="50" placeholder="Escribe tu nombre" required><br>
+      <input type="text" name="apellidos" maxlength="50" placeholder="Escribe tus apellidos"><br>
+      <input type="text" name="edad" maxlength="50" placeholder="Escribe tu edad" size="10" required><br>
+
+      <label for="direccion">Direccion:🏡</label>
+      <input type="text" id="direccion" name="direccion" placeholder="Direccion">
+
+      <label for="telefono">Telefono:📳</label>
+      <input type="number" id="telefono" name="telefono" placeholder="Telefono celular">
+
+      <label for="email">Email:📧</label>
       <input type="email" id="email" name="email" placeholder="Email" required>
 
-      <label for="contraseña">Contraseña:</label>
+      <label for="sexo">Sexo:</label>
+      <label>Hombre:🧑 <input type="radio" name="sexo" value="hombre" required>H</label><br>
+      <label>Mujer:👩 <input type="radio" name="sexo" value="mujer" required>M</label>
+
+      <label for="contraseña">Contraseña:📝</label>
       <input type="password" id="contraseña" name="password" placeholder="Contraseña" required> 
 
+      <label for="mensaje">Mensaje:📣</label>
+      <input type="text" id="mensaje" name="mensaje" placeholder="Mensaje" required>
+
       <div>
-        <a href="#">Politica de privacidad</a>
-        <a href="#">Terminos y condiciones</a>
+        <h2>Casillas de verficacion:</h2>
+        <p>Deseo recibir informacion sobre novedades y ofertas.</p>
+        <label><input name="verificacion" type="checkbox" checked>Si</label><br>
+
+        <p>Declaro haber leido y aceptado las condiciones generales del programa y la normativa sobre proteccion de datos.</p>
+        <label><input type="checkbox" name="terminos">Acepto los Terminos y Condiciones.</label><br>
       </div>
 
-      <input class="btn" type="submit" value="Enviar">
+      <input class="btn" type="submit" src="img/boton.png" value="Enviar" width="200">
 
       <input type="hidden" name="_next" value="https://icaito-ricodi.github.io/Formulario_ricodi/">
       <input type="hidden" name="_captcha" value="false">
     </div>
-    
+    <footer> &copy; DERECHOS RESERVADOS D.H.R. 7025</footer>
   </form>
 </body>
 </html>
